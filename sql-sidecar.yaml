@@ -1,0 +1,6 @@
+- !host
+  id: system:serviceaccount:bnl-demo-app-ns:demo-db-mysql-sa
+  annotations:
+    authn/api-key: true
+    authn-jwt/spring-demo/kubernetes.io/namespace: bnl-demo-app-ns
+    authn-jwt/spring-demo/kubernetes.io/serviceaccount/name: demo-db-mysql-sa

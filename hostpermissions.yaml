@@ -1,0 +1,3 @@
+- !grant
+  role: !group apps
+  member: !host /data/bnl/ocp-apps/system:serviceaccount:bnl-demo-app-ns:demo-app-push-to-file-sidecar-sa

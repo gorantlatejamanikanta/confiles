@@ -1,0 +1,12 @@
+- !permit
+  resources:
+    - !variable url
+    - !variable username
+    - !variable password
+    - !variable mysql-url
+    - !variable mysql-host
+    - !variable mysql-port
+    - !variable mysql-username
+    - !variable mysql-password
+  role: !host system:serviceaccount:bnl-demo-app-ns:demo-db-mysql-sa
+  privileges: [read,execute]
